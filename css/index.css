@@ -1,1 +1,334 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.table-cells {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+.container header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.container nav a {
+  margin-right: 30px;
+  color: black;
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+.container nav a:last-child {
+  margin-right: 5px;
+}
+.container .top-intro {
+  width: 100%;
+  padding: 35px;
+  background: lightgray;
+}
+@media (max-width: 500px) {
+  .container .top-intro {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+}
+.container .top-intro img {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.container .top-intro .top-text {
+  padding-bottom: 30px;
+  border-bottom: 1px solid darkgray;
+}
+.container .top-intro .top-text p {
+  font-size: 2.25rem;
+}
+.container .top-intro .bottom-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.container .top-intro .bottom-text p {
+  font-size: 2rem;
+}
+.container .top-intro .bottom-text button {
+  background: #555555;
+  vertical-align: top;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 2.25rem;
+  color: white;
+  border: 1px solid #555555;
+  cursor: pointer;
+  font-family: 'Titillium Web', sans-serif;
+  font: white;
+  border-radius: 5px;
+}
+.container .top-intro .bottom-text button:hover {
+  background: darkgrey;
+  color: white;
+  border: 1px solid darkgray;
+}
+.container .top-intro h1 {
+  font-size: 6rem;
+  padding-bottom: 30px;
+  font-style: oblique;
+}
+.container h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-style: oblique;
+}
+.container .middle-content {
+  width: 100%;
+  padding: 35px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .middle-content {
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+}
+.container .middle-content .middle-text {
+  width: 48%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container .middle-content .middle-text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.container .middle-content .middle-text h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-style: oblique;
+}
+.container .middle-content .middle-text p {
+  font-size: 2rem;
+}
+.container .middle-content .middle-list {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .middle-list {
+    width: 100%;
+  }
+}
+.container .middle-content .middle-list ul {
+  list-style-type: none;
+  font-size: 2rem;
+  margin: 0px;
+  padding: 10px;
+}
+.container .middle-content .middle-list ul li {
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-bottom: 0px;
+}
+.container .middle-content .middle-list ul #mog {
+  border-bottom: 1px solid lightgrey;
+}
+.container .bottom-content {
+  width: 100%;
+  padding: 35px;
+}
+.container .bottom-content table {
+  width: 100%;
+  margin-top: 20px;
+}
+.container .bottom-content table tr {
+  height: 40px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+.container .bottom-content table tr th {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.container .bottom-content table tr td {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.container .bottom-content .contact {
+  margin-top: 60px;
+  text-align: center;
+}
+.container footer {
+  background: darkgray;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 880px;
+  height: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.container footer p {
+  font-size: 1.75rem;
+}
